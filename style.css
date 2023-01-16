@@ -1,0 +1,17 @@
+/* .jumbotron{
+    background-image: url(./assets/img2.jpg);
+    object-fit: cover;
+    height: 30vh;
+    background-size: 100% 100%;
+} */
+
+.card-title{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.carousel-item img{
+    height: 60vh;
+}
