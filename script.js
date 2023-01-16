@@ -9,8 +9,6 @@ const options = {
 let songs = [];
 
 const renderMusic = (searchResults, section) => {
-  console.log(section);
-  console.log(searchResults);
   let sectionDiv = document.getElementById(section);
   for (let i = 0; i < searchResults.data.length; i++) {
     let result = searchResults.data[i];
@@ -43,7 +41,7 @@ function loadTracks() {
   for (let i = 0; i < songs.length; i++) {
     let song = songs[i];
     rows.innerHTML += ` <tr>
-        <th scope="row">${i}</th>
+        <th scope="row">${i + 1}</th>
         <td>${song.title}</td>
         <td>${song.album.title}</td>
         <td>${song.artist.name}</td>
@@ -51,6 +49,17 @@ function loadTracks() {
       </tr>`;
   }
   songCount();
+}
+
+function loadUniqueAlbums() {
+  let uniqueAlbums = [];
+  songs.forEach((song) => {
+    if (!uniqueAlbums.includes(song.album.title)) {
+      uniqueAlbums.push(song.album.title);
+    }
+  });
+
+  console.log(`Unique Albums: ${uniqueAlbums.length}`);
 }
 
 function getMusic(searchQuery, section) {

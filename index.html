@@ -14,7 +14,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#"><i class="bi bi-boombox mr-2"></i> Musically</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,12 +23,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Musically <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-muted" href="#pink">Pink Floyd </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-muted" href="#daft">Daft Punk</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link text-muted" href="#metal">Metallica </a>
                 </li>
 
             </ul>
             <!-- <form class="form-inline my-2 my-lg-0"> -->
-                <button class="btn btn-outline-success my-2 my-sm-0" onclick = "loadTracks()"  data-toggle="modal" data-target="#exampleModal" type="submit">View Tracks</button>
+                <button class="btn btn-outline-secondary my-2 my-sm-0 mr-3" onclick = "loadUniqueAlbums()" type="submit">Unique Albums</button>
+                <button class="btn btn-outline-secondary my-2 my-sm-0" onclick = "loadTracks()"  data-toggle="modal" data-target="#exampleModal" type="submit">View Tracks</button>
             <!-- </form> -->
         </div>
     </nav>
