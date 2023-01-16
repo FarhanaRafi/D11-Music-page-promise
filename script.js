@@ -74,6 +74,12 @@ function getMusic(searchQuery, section) {
     .catch((err) => console.error(err));
 }
 
+function loadSearch() {
+  let searchInput = document.getElementById("search-input").value;
+  document.getElementById("search").innerHTML = "";
+  getMusic(searchInput, "search");
+}
+
 function loadSections() {
   getMusic("pink floyd", "pink");
   getMusic("metallica", "metal");

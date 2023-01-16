@@ -74,6 +74,17 @@
           <span class="sr-only">Next</span>
         </button>
       </div>
+
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="search-input" placeholder="Search for song" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" onclick="loadSearch()" type="button" id="button-addon2">Search</button>
+        </div>
+      </div>
+
+      <div class="container mt-3" ><h1>Search Results</h1>
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5"  id="search"></div>
+    </div>
    
     <div class="container mt-3" ><h1>Pink floyd</h1>
         <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-5"  id="pink"></div>
@@ -89,8 +100,8 @@
 
  
 
-  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog ">
+  <div  class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" >
       <div class="modal-content bg-dark">
         <div class="modal-header">
           <h5 class="modal-title text-white" id="exampleModalLabel">Tracks <span id="count"></span></h5>
